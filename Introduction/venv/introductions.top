@@ -64,7 +64,7 @@ u: (~informal6)
 
 
 #Module in development
-u: (~level2PatResp1) ["I surely can help you" "Ditto, it is located in "]
+u: (~level2PatResp1) ["I surely can help you" "Ditto, it is located in "]   #Have to build a data structure to house a layout of each building. Each object should have a list services offered in that room
 u: (~level2PatResp2-0) ["Why that's an awesome name" "It is my pleasure to meet you "]
 u: (~level2PatResp2-1) ["Okay, then. Have a nice day" "It was a pleasure to meet you" "Well, I hope you have a good day"]
 u: ([~level2PatResp3-0 ~level2PatResp3-1]) ["You sound very motivated today. Is it a big day?" "You should every ambitionous today. Is it a big day?"]
@@ -75,7 +75,75 @@ concept:(level2PatResp2-1) ["I don't feel comfortable telling you" "Mom said not
 concept:(level2PatResp3-0) ["That's great to hear" "I'm glad you're having a marvelous morning" "I see you're having a spectucular morning" "Wow, I"m so gald your morning is looking up" "Oh just smell the morning breeze" "Good morning, sunshine"]
 concept:(level2PatResp3-1) ["Good morning! And if I don't see you, good afternoon, good evening, and good night!" "Any morning seeing your sweet face is a good morning, indeed!" "Mornin' mi amigo!" ]
 concept:(level2PatResp4) ["That's great to hear" "I'm glad you're having a marvelous afternoon" "I see you're having a spectucular afternoon" "Wow, I"m so gald your afternoon is looking up"]
-concept:(level2PatResp5) ["That's great to hear" "I'm glad you're having a marvelous evening" "I see you're having a spectucular evening" "Wow, I"m so gald your evening is looking up" "Such a pleasant eveing"]
+concept:(level2PatResp5) ["That's great to hear" "I'm glad you're having a marvelous evening" "I see you're having a spectucular evening" "Wow, I"m so gald your evening is looking up" "Such a pleasant evening"]
 
 
 
+,,,
+Useful link with list of standard hospital departments
+http://www.netdoctor.co.uk/health-services/nhs/a4502/a-to-z-of-hospital-departments/
+
+Data structure purposed for the building services. A simple IR algorithm will be used to rank the response form the patient to get a score for the department that best suits the request.
+
+admin= ["personnel issue", "complaint", "administrator"]
+anaesthetics = ["acute pain services", "chronic pain services", "critical care services", "obsteric anaesthesia", "anaesthesia", "childbirth", "casarean", "post surgery", "arthritis", "pain management"]
+cardiology = ["ecg", "electrocardiogram", "echocardiograms", "ultrasound heart", "stroke risk", "carotid artery", "blood pressure", "pacemakers", "cardiac catheterisation", "cornonary angiography", "arteries"]
+chaplaincy = ["spirtual", "religious", "God", "Lord", "pastoral", "race"]
+criticalcare = ["intensive care", "seriously ill"]
+diagimaging = ["x-ray", "scan", "mammography", "ultrasound", "angiograph", "radiology", "CT", "cat scan", "mri", "breast screening", "breast", "mammogram"]
+earnosethroat = ["ear", "nose", "throat", "neck lumps", "tear", "tear duct", "facial skin", "facial lesions", "balance problems", "balance issues", "hearing problems", "hearing issues", "snoring", "sleep apnea", "allergy", "salivary", "salivary gland", "voice disorder"]
+elderlyserv = ["stroke medicine", "stroke", "gastroenterology", "diabetes", "locomotor", "movement", "continence", "syncope", "fainting", "bone"]
+gastro = ["endoscopy", "bowel", "lower gi", "upper gi", "nutritional services", "nutrition", "colerectal", "inflammation bowel", "swallowing"]
+gensurgery = ["day surgery", "thyroid", "kidney transplants", "colon", "gallbladder", "laparoscopic", "endoscopy", "breast surgery"]
+gynaecology = ["endemetritis", "infertility", "incontinence", "cervical smear", "menopause", "post menopause"]
+haematology = ["blood", "malignancies", "blood disease"]
+maternity = ["childbirth", "new born", "antenatal care", "postnatal", "pregancy"]
+microbiology = ["bacterial", "viral", "MRSA", "C", "biology"]
+neonatal = ["baby", "mother baby", "newborn"]
+nephrology = ["kidney", "renal"]
+neurology = ["nervous system", "nerve", "brain", "spine", "spinal cord", "epilepsy", "sclerosis"]
+nutritiondiabetes = ["diabetes", "cancer", "kidney", "paediatrics", "elderly care", "surgery", "critical care", "gastroentrology"]
+obstetricsgynaecology = ["antenatal", "postnatal", "prenatal diagnosis", "maternal surveillance", "foetal surveillance", "general inpatient", "general outpatient", "colposcopy", "laser therapy", "hysteroscopy", "psychosexual counseling", "miscarriage", "early pregnancy"]
+occtherapy = ["physically impaired", "mentally impaired", "temporary disability", "home assessment"]
+oncology = ["radiotherapy", "chemotherapy", "cancer", "tumor", "blood disorder"]
+ophthalmology = ["general eye", "laser treatment", "optometry", "orthoptics", "prosthetic eye", "eye scan", "ophthalmic imaging"]
+orthopaedics = ["muscoloskeletal", "muscle", "joint", "bones", "ligament", "tendon", "fracture"]
+pharmacy = ["medication", "prescriptions", "pharmacy"]
+physiotherapy = ["exercise", "manipulation"]
+renal = ["kidney failure", "haemodialysis", "dialysis", "peritoneal dialysis"]
+rheumatology = ["bone", "joint", "ligament", "tendon", "muscle"]
+sexualhealth = ["sti", "sexually transmitted infection", "sexually transmitted disease", "contraception", "pregnancy test"]
+urology = ["cystoscopy", "bladder check", "urodynamic", "incontinence", "prostate", "shockwave lithotripsy", "kidney stone"]
+
+roomServices = {}
+roomServices[" "] = admin
+roomServices[" "] = anaesthetics
+roomServices[" "] = cardiology
+roomServices[" "] = chaplaincy
+roomServices[" "] = criticalcare
+roomServices[" "] = diagimaging
+roomServices[" "] = earnosethroat
+roomServices[" "] = elderlyserv
+roomServices[" "] = gastro
+roomServices[" "] = gensurgery
+roomServices[" "] = gynaecolgoy
+roomServices[" "] = haematology
+roomServices[" "] = maternity
+roomServices[" "] = microbiology
+roomServices[" "] = neonatal
+roomServices[" "] = nephrology
+roomServices[" "] = neurology
+roomServices[" "] = nutritiondiabetes
+roomServices[" "] = obstetricsgynaecology
+roomServices[" "] = occtherapy
+roomServices[" "] = oncology
+roomServices[" "] = ophthalmology
+roomServices[" "] = orthopaedics
+roomServices[" "] = pharmacy
+roomServices[" "] = physiotherapy
+roomServices[" "] = renal
+roomServices[" "] = reheumatology
+roomServices[" "] = sexualhealth
+roomServices[" "] = urology
+
+,,,
