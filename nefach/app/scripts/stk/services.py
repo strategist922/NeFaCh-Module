@@ -6,9 +6,9 @@ Syntactic sugar for accessing NAOqi services.
 
 __version__ = "0.1.2"
 
-__copyright__ = "Copyright 2015, Aldebaran Robotics"
-__author__ = 'ekroeger'
-__email__ = 'ekroeger@aldebaran.com'
+__copyright__ = "Copyright 2018, St. John's University"
+__author__ = 'Neelesh Rastogi'
+__email__ = 'neelesh.rastogi15@stjohns.edu'
 
 
 class ServiceCache(object):

@@ -10,9 +10,9 @@ bits so you don't have them mixed in your logic.
 
 __version__ = "0.1.3"
 
-__copyright__ = "Copyright 2015, Aldebaran Robotics"
-__author__ = 'ekroeger'
-__email__ = 'ekroeger@aldebaran.com'
+__copyright__ = "Copyright 2018, St. John's University"
+__author__ = 'Neelesh Rastogi'
+__email__ = 'neelesh.rastogi15@stjohns.edu'
 
 import sys
 import qi

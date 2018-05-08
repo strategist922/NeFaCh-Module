@@ -62,9 +62,8 @@ u: (~informal4) ^rand[~informalresponse4]
 u: (~informal5) ^rand[~informalresponse5]
 u: (~informal6)
 
-
 #Module in development
-u: (~level2PatResp1) ["I surely can help you" "Ditto, it is located in "]   #Have to build a data structure to house a layout of each building. Each object should have a list services offered in that room
+u: (~level2PatResp1) ["I surely can help you" "Yep, it is located in "]   #TODO: Have to build a data structure to house a layout of each building. Each object should have a list services offered in that room
 u: (~level2PatResp2-0) ["Why that's an awesome name" "It is my pleasure to meet you "]
 u: (~level2PatResp2-1) ["Okay, then. Have a nice day" "It was a pleasure to meet you" "Well, I hope you have a good day"]
 u: ([~level2PatResp3-0 ~level2PatResp3-1]) ["You sound very motivated today. Is it a big day?" "You should every ambitionous today. Is it a big day?"]

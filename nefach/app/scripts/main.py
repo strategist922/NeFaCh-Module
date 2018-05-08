@@ -27,7 +27,6 @@ class Activity(object):
             self.events.disconnect("ALTabletService.onTouchDown")
             self.logger.info("Tablet touched: " + str(args))
             self.s.ALTextToSpeech.say("Yay!")
-
             self.s.ALTextToSpeech.say("I am still being coded. So far, I can just have basic communication. But, some updates are on the way.")
             self.s.ALTextToSpeech.say("In the mean while, let me tell you something about my project which, me and Neel, have been working on. We call it NeFaCh Module")
             self.s.ALTextToSpeech.say("In this project, we are introducing an unique dialogue system platform to assist human in establishing, a non-abrupt communication with a social-robot, like ME!, especially, in Health-care environment.")
