@@ -1,12 +1,9 @@
-"""
-A sample showing how to make a Python script as an app.
-"""
+__version__ = "0.0.1"
+__python_version__ ="2.7 x86"
 
-__version__ = "0.0.8"
-
-__copyright__ = "Copyright 2015, Aldebaran Robotics"
-__author__ = 'YOURNAME'
-__email__ = 'YOUREMAIL@aldebaran.com'
+__copyright__ = "Copyright 2018, St. John's University"
+__author__ = 'Neelesh Rastogi'
+__email__ = 'neelesh.rastogi15@stjohns.edu'
 
 import stk.runner
 import stk.events
@@ -14,32 +11,6 @@ import stk.services
 import stk.logging
 import argparse
 from naoqi import ALProxy
-'''
-def main(robot_ip, robot_port, topf_path):
-    dialog_p = ALProxy('ALDialog', robot_ip, robot_port)
-    dialog_p.setLanguage("English")
-
-    # Load topic - absolute path is required
-    topf_path = topf_path.decode('utf-8')
-    topic = dialog_p.loadTopic(topf_path.encode('utf-8'))
-
-    # Start dialog
-    dialog_p.subscribe('myModule')
-
-    # Activate dialog
-    dialog_p.activateTopic(topic)
-
-    raw_input(u"Press 'Enter' to exit.")
-
-    # Deactivate topic
-    dialog_p.deactivateTopic(topic)
-
-    # Unload topic
-    dialog_p.unloadTopic(topic)
-
-    # Stop dialog
-    dialog_p.unsubscribe('myModule')
-'''
 
 class Activity(object):
     "A sample standalone app, that demonstrates simple Python usage"
@@ -55,17 +26,44 @@ class Activity(object):
         if args:
             self.events.disconnect("ALTabletService.onTouchDown")
             self.logger.info("Tablet touched: " + str(args))
-            self.s.ALTextToSpeech.say("Yay!")
+            self.s.ALTextToSpeech.say("Yay!");
+
+            self.s.ALTextToSpeech.say("I am still being coded, So far in NeFaCh Module thats all i can do.")
+            self.s.ALTextToSpeech.say("But if you wish to learn more about me please contact Neel.")
             self.stop()
+
+    def nefach(topf_path):
+        dialog_p = ALProxy('ALDialog', "10.132.61.99", "9559")
+        dialog_p.setLanguage("English")
+
+        # Load topic - absolute path is required
+        topf_path = topf_path.decode('utf-8')
+        topic = dialog_p.loadTopic(topf_path.encode('utf-8'))
+        # Start dialog
+        dialog_p.subscribe('nefach_module')
+        # Activate dialog
+        dialog_p.activateTopic(topic)
+
+        raw_input(u"Press 'Enter' to exit.")
+
+        # Deactivate topic
+        dialog_p.deactivateTopic(topic)
+        # Unload topic
+        dialog_p.unloadTopic(topic)
+        # Stop dialog
+        dialog_p.unsubscribe('nefach_module')
 
     def on_start(self):
         "Ask to be touched, waits, and exits."
         # Two ways of waiting for events
         # 1) block until it's called
-        self.s.ALTextToSpeech.say("Hey Neel You Are Awesome. Touch my forehead.")
+        self.s.ALTextToSpeech.say("Hello Class, Hope you are doing good. For this, I need a Volunteer. As a Test, Touch my forehead.")
         self.logger.warning("Listening for touch...")
         while not self.events.wait_for("FrontTactilTouched"):
             pass
+
+        #NeFaCh Call to TOpic File and execute.
+            nefach("C:\Users\invis\Documents\Github\NeFaCh-Module\nefach\app\scripts\Introduction.top")
 
         # 2) explicitly connect a callback
         if self.s.ALTabletService:
@@ -89,22 +87,3 @@ class Activity(object):
 
 if __name__ == "__main__":
     stk.runner.run_activity(Activity)
-    
-'''  
-    parser = argparse.ArgumentParser()
-    parser.add_argument("path",
-                        type=str,
-                        help="Absolute path of the dialog topic file"
-                             " (on the robot).")
-    parser.add_argument("--ip",
-                        type=str,
-                        default="10.132.61.99",
-                        help="Robot ip address.")
-    parser.add_argument("--port",
-                        type=int,
-                        default=9559,
-                        help="Robot port number.")
-
-    args = parser.parse_args()
-    main(args.ip, args.port, args.path)
-'''
