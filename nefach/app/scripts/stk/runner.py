@@ -3,7 +3,7 @@ stk.runner.py
 
 A helper library for making simple standalone python scripts as apps.
 
-Wraps some NAOqi and system stuff, you could do all this by directly using the
+Wraps some NAOqi and system files, you could do all this by directly using the
 Python SDK, these helper functions just isolate some frequently used/hairy
 bits so you don't have them mixed in your logic.
 """
