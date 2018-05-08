@@ -29,9 +29,9 @@ class Activity(object):
             self.s.ALTextToSpeech.say("Yay!")
 
             self.s.ALTextToSpeech.say("I am still being coded. So far, I can just have basic communication. But, some updates are on the way.")
-            self.s.ALTextToSpeech.say("In the mean while, let me tell you something about my project which me, and, Neel, have been working on: NeFaCh Module")
-            self.s.ALTextToSpeech.say("In this project, we are introducing an unique dialogue system platform to assist human in establishing a non-abrupt communication with a social-robot, like me. especially in Health-care environment.")
-            self.s.ALTextTOSpeech.say("Today if we see Communication  with social-robot is still in early stage and research nowadays. Therefore, Our team including me, believe, having proper communication is essential in HRI systems, so that we can allow users to communicate and automate tasks just using natural language without frustration and stress.")
+            self.s.ALTextToSpeech.say("In the mean while, let me tell you something about my project which, me and Neel, have been working on. We call it NeFaCh Module")
+            self.s.ALTextToSpeech.say("In this project, we are introducing an unique dialogue system platform to assist human in establishing, a non-abrupt communication with a social-robot, like me. especially in Health-care environment.")
+            self.s.ALTextToSpeech.say("Today if we see Communication  with social-robot is still in early stage and research nowadays. Therefore, Our team including me, believe, having proper communication is essential in HRI systems, so that we can allow users to communicate and automate tasks just using natural language without frustration and stress.")
             self.s.ALTextToSpeech.say("When we see the historic research in my field, we found that having Natural Language Communication, non-abruptly, for specific task and domain is a challenging one to accomplish.")
             self.s.ALTextToSpeech.say("One of the major issues we find is that, no matter how intelligent machines like me might be, sometimes humans end up experiencing frustration in communication with robots.")
             self.s.ALTextToSpeech.say("Therefore, To overcome this issue, me and my team, we aim to develop an entirely open-source, long-term supported chat module with a proper lexicon, for HRI systems focused primarly in Health-care environment. This will require us to investigate perceptive, emotive, and spoken skills, when it comes to conversations")
