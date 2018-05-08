@@ -4,9 +4,8 @@
 #
 #  Edited by Christian Taylor, christian.taylor17@stjohns.edu   christian.taylor1992@gmail.com
 #  Edited by Neelesh Rastogi, neelesh.rastogi15@stjohns.edu
-#   This model only supports conversation initiated by the patient
-#
-#
+#   
+#  This model only supports conversation initiated by the patient
 #
 # level2PatResp1 -> response1-0
 # level2PatResp2-0 -> responserepsonse1-1, response2, response3, response4, response5, response6
@@ -146,5 +145,4 @@ roomServices["25"] = renal
 roomServices["26"] = reheumatology
 roomServices["27"] = sexualhealth
 roomServices["28"] = urology
-
 ,,,
