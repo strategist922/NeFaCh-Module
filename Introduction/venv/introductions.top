@@ -1,5 +1,4 @@
-
-#    Helpful URL's
+#  Helpful URL's
 #  http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html
 #  http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html#dialog-concept
 #
@@ -17,6 +16,7 @@
 # level2PatResp5 -> formalresponse1-2
 #
 # ALL TEXT AND RESPONSES STILL NEED TO BE BETTER CATEGORIZED
+
 topic: ~introsPat()
 language: enu
 
