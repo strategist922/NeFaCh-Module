@@ -18,6 +18,8 @@
         <File name="runner" src="scripts/stk/runner.pyc" />
         <File name="services" src="scripts/stk/services.py" />
         <File name="services" src="scripts/stk/services.pyc" />
+        <File name="swiftswords_ext" src="swiftswords_ext.mp3" />
+        <File name="taichimove" src="taichimove.pmt" />
     </Resources>
     <Topics>
         <Topic name="introductions" src="scripts/introductions.top" topicName="" language="" />
