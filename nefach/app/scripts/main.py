@@ -70,7 +70,7 @@ class Activity(object):
         while not self.events.wait_for("FrontTactilTouched"):
             pass
 
-        #NeFaCh Call to TOpic File and execute.
+        #NeFaCh Call to Topic File and execute.
             #nefach("C:\Users\invis\Documents\Github\NeFaCh-Module\nefach\app\scripts\Introduction.top")
 
         # 2) explicitly connect a callback
