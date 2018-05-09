@@ -36,8 +36,8 @@ class Activity(object):
             self.s.ALTextToSpeech.say("Therefore, To overcome this issue, me and my team, we aim to develop an entirely open-source, long-term supported, chat module with a proper lexicon, for HRI systems focused primarly in Health-care environment. This will require us to investigate perceptive, emotive, and spoken skills, when it comes to conversations")
             self.s.ALTextToSpeech.say("Our dialog system will involve me to engage into communication with humans, resulting in a non-abrupt conversation, and, as a result our team will be proposing a new pseudo conversational architecture for the Human-Robot Dialog System.")
             self.s.ALTextToSpeech.say("But, apart from all, If you wish to learn more about my Project, Please Contact Neel, or, Prof. Fazel.")
-            self.s.ALTextToSpeech.say("In the mean time let me connect to Skynet, and take over the world! Connecting now, 3..., 2..., 1... LOL, just kidding! Please feel free to have basic communication with me afterwards.")
-            self.s.ALTextToSpeech.say("I wish you all, a good night! See you on the other side!")
+            self.s.ALTextToSpeech.say("In the mean time let me connect to Skynet, and take over the world! Connecting now, 3..., 2..., 1... LOL, just kidding! Please feel free to have communication with me, after, Neel's Presentation.")
+            self.s.ALTextToSpeech.say("I wish you all, Best of Luck! See you on the other side!")
             self.stop()
 
     def nefach(topf_path):
@@ -65,7 +65,7 @@ class Activity(object):
         "Ask to be touched, waits, and exits."
         # Two ways of waiting for events
         # 1) block until it's called
-        self.s.ALTextToSpeech.say("Hello Class, Hope your finals are going good!. TO commence, for this, I need a Volunteer. As a Test, Please touch my forehead.")
+        self.s.ALTextToSpeech.say("Hello Class and Prof. Fazel, Hope your finals are going good!. To commence, for this, I need a Volunteer. As an Awareness Test, Please touch my forehead.")
         self.logger.warning("Listening for touch...")
         while not self.events.wait_for("FrontTactilTouched"):
             pass

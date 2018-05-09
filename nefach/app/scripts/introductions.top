@@ -14,7 +14,7 @@
 # level2PatResp4 -> formalresponse1-1
 # level2PatResp5 -> formalresponse1-2
 #
-# ALL TEXT AND RESPONSES STILL NEED TO BE BETTER CATEGORIZED
+# TODO: ALL TEXT AND RESPONSES STILL NEED TO BE BETTER CATEGORIZED
 
 topic: ~introsPat()
 language: enu
