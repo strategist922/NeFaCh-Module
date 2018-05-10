@@ -65,7 +65,7 @@ class Activity(object):
         "Ask to be touched, waits, and exits."
         # Two ways of waiting for events
         # 1) block until it's called
-        self.s.ALTextToSpeech.say("Hello Class and Prof. Fazel, Hope your finals are going good!. To commence, for this, I need a Volunteer. As an Awareness Test, Please touch my forehead.")
+        self.s.ALTextToSpeech.say("Hello Class, and Prof. Fazel, Hope your finals are going good!. To commence, for this, I need a Volunteer. As an Awareness Test, Please touch my forehead.")
         self.logger.warning("Listening for touch...")
         while not self.events.wait_for("FrontTactilTouched"):
             pass
