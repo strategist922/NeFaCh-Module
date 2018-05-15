@@ -21,6 +21,6 @@
   <robotRequirement/>
  </requirements>
  <services>
-  <service name="main" autorun="false" execStart="/usr/bin/python2 scripts/main.py"/>
+  <service name="main" execStart="/usr/bin/python2 scripts/main.py" autorun="false"/>
  </services>
 </package>

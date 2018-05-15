@@ -28,6 +28,7 @@ class Activity(object):
             self.logger.info("Tablet touched: " + str(args))
             self.s.ALTextToSpeech.say("Yay!")
             self.s.ALTextToSpeech.say("I am still being coded. So far, I can just have basic communication. But, some updates are on the way.")
+        
             self.s.ALTextToSpeech.say("In the mean while, let me tell you something about my project which, me and Neel, have been working on. We call it NeFaCh Module")
             self.s.ALTextToSpeech.say("In this project, we are introducing an unique dialogue system platform to assist human in establishing, a non-abrupt communication with a social-robot, like ME!, especially, in Health-care environment.")
             self.s.ALTextToSpeech.say("Today if we see Communication  with social-robot is still in early stage and research. Therefore, Our team including me, believe, having proper communication is essential in HRI systems, so that we can allow users to communicate, and, automate tasks just using natural language without frustration and stress.")
@@ -35,6 +36,7 @@ class Activity(object):
             self.s.ALTextToSpeech.say("One of the major issues we find is that, no matter how intelligent machines like me might be, sometimes humans end up experiencing frustration in communication with robots.")
             self.s.ALTextToSpeech.say("Therefore, To overcome this issue, me and my team, we aim to develop an entirely open-source, long-term supported, chat module with a proper lexicon, for HRI systems focused primarly in Health-care environment. This will require us to investigate perceptive, emotive, and spoken skills, when it comes to conversations")
             self.s.ALTextToSpeech.say("Our dialog system will involve me to engage into communication with humans, resulting in a non-abrupt conversation, and, as a result our team will be proposing a new pseudo conversational architecture for the Human-Robot Dialog System.")
+           
             self.s.ALTextToSpeech.say("But, apart from all, If you wish to learn more about my Project, Please Contact Neel, or, Prof. Fazel.")
             self.s.ALTextToSpeech.say("In the mean time let me connect to Skynet, and take over the world! Connecting now, 3..., 2..., 1... LOL, just kidding! Please feel free to have communication with me, after, Neel's Presentation.")
             self.s.ALTextToSpeech.say("I wish you all, Best of Luck! See you on the other side!")
@@ -65,7 +67,7 @@ class Activity(object):
         "Ask to be touched, waits, and exits."
         # Two ways of waiting for events
         # 1) block until it's called
-        self.s.ALTextToSpeech.say("Hello Class, and Prof. Fazel, Hope your finals are going good!. To commence, for this, I need a Volunteer. As an Awareness Test, Please touch my forehead.")
+        self.s.ALTextToSpeech.say("Hello Class, and Prof. Chris, Hope your finals are going good!. To commence, for this, I need a Volunteer. As an Awareness Test, Please touch my forehead.")
         self.logger.warning("Listening for touch...")
         while not self.events.wait_for("FrontTactilTouched"):
             pass
