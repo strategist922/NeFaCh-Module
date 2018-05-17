@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="nefach" version="0.0.1">
+<package version="0.0.1" uuid="nefach">
  <names>
   <name lang="en_US">nefach</name>
  </names>
@@ -21,6 +21,6 @@
   <robotRequirement/>
  </requirements>
  <services>
-  <service name="main" execStart="/usr/bin/python2 scripts/main.py" autorun="false"/>
+  <service execStart="/usr/bin/python2 scripts/main.py" autorun="false" name="main"/>
  </services>
 </package>

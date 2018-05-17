@@ -22,7 +22,7 @@
         <File name="taichimove" src="taichimove.pmt" />
     </Resources>
     <Topics>
-        <Topic name="introductions" src="scripts/introductions.top" topicName="" language="" />
+        <Topic name="introductions" src="scripts/topic/introductions.top" topicName="" language="" />
     </Topics>
     <IgnoredPaths>
         <Path src=".metadata" />
